@@ -1,0 +1,6 @@
+<h1>Gold Count: <span *ngIf="gold"> {{gold[0].goldCount}} </span> </h1>
+<div>
+    <form (submit)="reset($event)">
+        <button type="submit">Start a new game</button>
+    </form>
+</div>

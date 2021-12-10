@@ -1,0 +1,48 @@
+<div class="container">
+    <div>
+        <h1>Farm</h1>
+        <div>Earns 2-5 Gold</div>
+        <div>
+            <form (submit)="farm($event)">
+                <button type="submit">Farm!</button>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <h1>Cave</h1>
+        <div>Earns 5-10 Gold</div>
+        <div>
+            <form (submit)="cave($event)">
+                <button type="submit">Cave!</button>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <h1>Casino</h1>
+        <div>Earns up to or lose up to 100 Gold</div>
+        <div>
+            <form (submit)="casino($event)">
+                <button type="submit">Casino!</button>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <h1>House</h1>
+        <div>Earns 7-15 Gold</div>
+        <div>
+            <form (submit)="farm($event)">
+                <button type="submit">House!</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div *ngFor="let messages of notifications">
+    <h3>{{messages}}</h3>
+</div>
+
+
+
